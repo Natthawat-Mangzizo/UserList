@@ -9,47 +9,186 @@
   <link rel="stylesheet" href="css/style.css" />
   <title>User List</title>
 </head>
-<header class="mb-5">
-  <div class="container mt-5">
-    <div class="d-flex justify-content-end ">
-      <div class="btn-group">
-        <button class="btn btn-secondary" data-bs-theme-value="dark">Dark</button>
-        <button class="btn btn-light" data-bs-theme-value="light">Light</button>
-      </div>
-    </div>
-  </div>
-
-</header>
-<script src="js/bootstrap.bundle.min.js"></script>
-<script src="js/darkmodetoggle.js"></script>
 
 <body>
-  <h1 class="mb-4">Users</h1>
-  <!-- Search box -->
-  <div class="row">
-    <div class="col-md-4">
-      <input type="text" class="form-control form-control-lg" placeholder="Search Users">
+  <!-- Header -->
+  <header class="mb-5">
+    <div class="container mt-5">
+      <div class="d-flex justify-content-end ">
+        <div class="btn-group">
+          <button class="btn btn-secondary" data-bs-theme-value="dark">Dark</button>
+          <button class="btn btn-light" data-bs-theme-value="light">Light</button>
+        </div>
+      </div>
     </div>
-    <div class="col-md-8">
+  </header>
+
+  <!-- Main Content -->
+  <main class="container">
+    <h1 class="mb-4">Users</h1>
+
+    <!-- Search box & Navigation -->
+    <div class="row mb-5">
+      <div class="col-md-4">
+        <input type="text" class="form-control form-control-lg" placeholder="Search Users">
+      </div>
+      <div class="col-md-8 user-menu d-flex justify-content-end align-items-center">
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Reputation</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-bg-primary rounded-3" href="#">New Users</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Editors</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Moderators</a>
+          </li>
+        </ul>
+      </div>
     </div>
-  </div>
-  <div class="col-md-8 user-menu d-flex justify-content-end align-items-center ">
-    <ul class="nav">
-      <li class="nav-item">
-        <a class="nav-link" href="#">Reputation</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link text-bg-primary rounded-3 " href="#">New Users</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Editors</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Moderators</a>
-      </li>
-    </ul>
-  </div>
+
+    <!-- User Cards List -->
+    <div class="row">
+      <!-- คน 1 -->
+      <div class="col-md-4">
+        <div class="card mb-3" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top"
+          data-bs-content="Email: john@gmail.com">
+          <div class="card-body">
+            <div class="d-flex gap-3">
+              <div class="user-img">
+                <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="" class="rounded-circle img-fluid">
+              </div>
+              <div class="user-info">
+                <h4>John Doe</h4>
+                <h6>Troy, MI</h6>
+                <span class="badge bg-primary">nature</span>
+                <span class="badge bg-primary">travel</span>
+                <span class="badge bg-primary">sport</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- คน 2 -->
+      <div class="col-md-4">
+        <div class="card mb-3" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top"
+          data-bs-content="Email: lehla@gmail.com">
+          <div class="card-body">
+            <div class="d-flex gap-3">
+              <div class="user-img">
+                <img src="https://randomuser.me/api/portraits/women/75.jpg" alt="" class="rounded-circle img-fluid">
+              </div>
+              <div class="user-info">
+                <h4>Lehla Nichols</h4>
+                <h6>Fort Worth, TX</h6>
+                <span class="badge bg-primary">Fashion</span>
+                <span class="badge bg-primary">STEM</span>
+                <span class="badge bg-primary">Architecture</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- คน 3 -->
+      <div class="col-md-4">
+        <div class="card mb-3" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top"
+          data-bs-content="Email: annie@gmail.com">
+          <div class="card-body">
+            <div class="d-flex gap-3">
+              <div class="user-img">
+                <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="" class="rounded-circle img-fluid">
+              </div>
+              <div class="user-info">
+                <h4>Annie Rice</h4>
+                <h6>Troy, MI</h6>
+                <span class="badge bg-primary">Electronics</span>
+                <span class="badge bg-primary">Tech</span>
+                <span class="badge bg-primary">Music</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- คน 4 -->
+      <div class="col-md-4">
+        <div class="card mb-3" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top"
+          data-bs-content="Email: Ostin@gmail.com">
+          <div class="card-body">
+            <div class="d-flex gap-3">
+              <div class="user-img">
+                <img src="https://randomuser.me/api/portraits/men/76.jpg" alt="" class="rounded-circle img-fluid">
+              </div>
+              <div class="user-info">
+                <h4>Ostin Lingard</h4>
+                <h6>MC, Ohio</h6>
+                <span class="badge bg-primary">Engineer</span>
+                <span class="badge bg-primary">Electric</span>
+                <span class="badge bg-primary">Computer</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- คน 5 -->
+      <div class="col-md-4">
+        <div class="card mb-3" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top"
+          data-bs-content="Email: annie@gmail.com">
+          <div class="card-body">
+            <div class="d-flex gap-3">
+              <div class="user-img">
+                <img src="https://randomuser.me/api/portraits/women/48.jpg" alt="" class="rounded-circle img-fluid">
+              </div>
+              <div class="user-info">
+                <h4>Nicole Rapas</h4>
+                <h6>Fros, LA</h6>
+                <span class="badge bg-primary">Art</span>
+                <span class="badge bg-primary">Dance</span>
+                <span class="badge bg-primary">Music</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- คน 6 -->
+      <div class="col-md-4">
+        <div class="card mb-3" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top"
+          data-bs-content="Email: annie@gmail.com">
+          <div class="card-body">
+            <div class="d-flex gap-3">
+              <div class="user-img">
+                <img src="https://randomuser.me/api/portraits/men/44.jpg" alt="" class="rounded-circle img-fluid">
+              </div>
+              <div class="user-info">
+                <h4>Thomas Jastin</h4>
+                <h6>Lod, TX</h6>
+                <span class="badge bg-primary">Computer</span>
+                <span class="badge bg-primary">Cybersecurity</span>
+                <span class="badge bg-primary">Engineer</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> <!-- ปิดแถวของการ์ดผู้ใช้ -->
+  </main>
+
+  <!-- Scripts -->
   <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/darkmodetoggle.js"></script>
+  <script>
+    const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]');
+    const popoverList = [...popoverTriggerList].map(
+      popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl)
+    );
+  </script>
 </body>
 
 </html>
